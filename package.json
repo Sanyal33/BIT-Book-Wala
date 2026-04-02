@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@vercel/analytics": "^1.1.2",
+    "package": "^1.0.1"
+  }
+}

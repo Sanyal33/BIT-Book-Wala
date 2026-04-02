@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Our Mission </title>
+    <script>
+      var i = 0;
+      var txt = 'The mission of a company providing free education and notes is to make quality educational resources accessible to everyone, regardless of their financial situation. This company aims to create a world where knowledge is available to all and where learning is not limited by financial barriers.Through the provision of free education and notes, this company seeks to empower individuals by giving them the tools they need to succeed in their personal and professional lives. By making educational resources available to everyone, the company hopes to inspire a passion for learning and to foster a culture of continuous improvement. Ultimately, the mission of this company is to contribute to the betterment of society by providing people with the knowledge they need to make informed decisions and to achieve their full potential. By providing free education and notes, the company is working towards creating a more equitable world where everyone has the opportunity to learn and grow.';
+      var speed = 20;
+      
+      function typeWriter() {
+        if (i < txt.length) {
+          document.getElementById("demo").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+      </script>
+</head>
+<body>
+    <p id="demo"></p>
+    <button onclick="typeWriter()">Click me</button>
+</body>
+</html>
